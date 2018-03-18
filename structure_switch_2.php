@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 $a = FALSE;
 
@@ -10,7 +10,9 @@ if ($a || $b) {
 	echo PHP_EOL;
 }
 
+// Problem! No difference between true or false.
 switch (true) {
+    // Forgot the break!
 	case $a:
 	case $b:
 		echo 'Running program...';
